@@ -228,6 +228,32 @@ ul,ol{list-style:none}
 .copy,.disclaimer{max-width:1040px;margin:26px auto 0;font-size:12px;color:rgba(255,255,255,.55)}
 .disclaimer{margin-top:6px;font-family:var(--f-jp)}
 
+/* ---------- スタジアム写真の背景 ---------- */
+.about,.legends{isolation:isolate}
+.about::before,.legends::before{content:"";position:absolute;inset:0 0 auto 0;z-index:-1;height:min(680px,100%);background:center top/cover no-repeat}
+.legends::before{height:min(760px,100%);background-position:center 38%}
+.about{padding-top:120px}
+.match-head{text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.about-grid{margin-top:96px}
+.legends .h-wide{text-shadow:0 2px 18px rgba(0,0,0,.7)}
+.legends-lead{text-shadow:0 1px 10px rgba(0,0,0,.8)}
+@media (min-width:901px){
+  .has-kv .hero-catch,.has-kv .hero-date{align-self:end;text-shadow:0 2px 3px rgba(0,0,0,.8),0 0 22px rgba(0,0,0,.75)}
+}
+.photo-band{position:relative;isolation:isolate;display:flex;align-items:center;min-height:540px;padding:88px 40px;background:#000 center/cover no-repeat;color:#fff}
+.photo-band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.6) 34%,rgba(0,0,0,0) 62%)}
+.photo-band-in{width:100%;max-width:1280px;margin:0 auto}
+.photo-band .eyebrow{color:var(--gold)}
+.photo-band h2,.photo-band p{text-shadow:0 2px 16px rgba(0,0,0,.75)}
+.photo-band h2{font-family:var(--f-jp);font-size:48px;font-weight:900;line-height:1.4;letter-spacing:.02em;word-break:auto-phrase}
+.photo-band p{margin-top:18px;font-family:var(--f-jp);font-size:17px;line-height:1.9}
+.photo-band .btn{margin-top:34px}
+.closing{min-height:480px;text-align:right}
+.closing::after{background:linear-gradient(270deg,rgba(0,0,0,.82),rgba(0,0,0,.5) 40%,rgba(0,0,0,.05) 70%)}
+.closing .closing-en{margin:0 0 14px;font-family:var(--f-en);font-size:14px;font-weight:800;letter-spacing:.34em;color:var(--gold)}
+.closing h2{font-weight:700}
+.closing p{font-size:20px;font-weight:500}
+
 /* 見出しは文節で折り返し、1文字だけ次の行に残らないようにする */
 .h-jp,.hero-catch,.match-head,.legends-lead,.about-text h3,.faq summary,.goods-grid h3,.fes-grid h3,.tk-name b{word-break:auto-phrase;text-wrap:balance}
 .lead,.about-text p,.faq details>div,.fes-grid p,.access dd{text-wrap:pretty}
@@ -254,6 +280,12 @@ ul,ol{list-style:none}
 
 /* ノートPC */
 @media (max-width:1280px){
+  .about{padding-top:100px}
+  .about-grid{margin-top:80px}
+  .photo-band{min-height:480px;padding:76px 32px}
+  .photo-band h2{font-size:42px}
+  .closing{min-height:420px}
+  .closing p{font-size:18px}
   .header{padding:0 28px}
   .nav{gap:26px;font-size:13px}
   .hero{padding:24px 96px 0}
@@ -296,6 +328,11 @@ ul,ol{list-style:none}
 
 /* タブレット横 */
 @media (max-width:1024px){
+  .about{padding-top:88px}
+  .about-grid{margin-top:68px}
+  .photo-band{min-height:440px}
+  .photo-band h2{font-size:38px}
+  .photo-band p{font-size:16px}
   .nav{gap:20px;font-size:12.5px}
   .logo-main{font-size:20px}
   .hero{padding:22px 88px 0}
@@ -330,6 +367,15 @@ ul,ol{list-style:none}
 
 /* タブレット縦：メニューをハンバーガーに、右のチケットタブを下部バーに */
 @media (max-width:900px){
+  .about{padding-top:84px}
+  .about::before{height:min(520px,100%)}
+  .legends::before{height:min(560px,100%)}
+  .about-grid{margin-top:64px}
+  .photo-band{min-height:400px;padding:68px 32px}
+  .photo-band::after{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.66) 50%,rgba(0,0,0,.25))}
+  .closing::after{background:linear-gradient(270deg,rgba(0,0,0,.86),rgba(0,0,0,.6) 55%,rgba(0,0,0,.2))}
+  .photo-band h2{font-size:34px}
+  .closing{min-height:360px}
   :root{--header-h:68px}
   .header{padding:0 24px}
   .logo-main{font-size:21px}
@@ -436,6 +482,19 @@ ul,ol{list-style:none}
 
 /* スマホ */
 @media (max-width:600px){
+  .about{padding-top:64px}
+  .about::before{height:min(420px,100%)}
+  .legends::before{height:min(420px,100%)}
+  .about-grid{margin-top:52px}
+  .photo-band{min-height:340px;padding:56px 20px}
+  .photo-band::after{background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.78))}
+  .closing::after{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.8))}
+  .photo-band h2{font-size:27px}
+  .photo-band p{font-size:14.5px;margin-top:12px}
+  .photo-band .btn{margin-top:24px}
+  .closing{min-height:300px;text-align:center}
+  .closing .closing-en{font-size:11px;letter-spacing:.26em}
+  .closing p{font-size:15.5px}
   :root{--header-h:60px}
   .header{padding:0 16px}
   .logo::before{width:40px;height:40px}
@@ -548,6 +607,8 @@ ul,ol{list-style:none}
 
 /* 小さいスマホ */
 @media (max-width:359px){
+  .photo-band h2{font-size:23px}
+  .closing p{font-size:14.5px}
   .logo-main{font-size:16.5px}
   .roster-note span{font-size:12px;letter-spacing:.16em}
   .hero-catch,.hero-date{font-size:18.5px}

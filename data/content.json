@@ -35,7 +35,7 @@
     }
   },
   "hero": {
-    "image": "uploads/dummy/keyvisual.svg",
+    "image": "uploads/dummy/keyvisual-lineup.jpg",
     "catch": "九州初開催！\n伝説たちが博多に集う！\nONE NIGHT ONLY",
     "date": "2027年3月21日(日)",
     "kickoff": "午後2時キックオフ",
@@ -242,7 +242,9 @@
         "status": "販売中"
       }
     ],
-    "note": "※価格はすべて税込です。\n※未就学児は保護者1名につき1名まで膝上観戦無料（座席が必要な場合は有料）。\n※チケットはお一人様1回の申込につき6枚まで。"
+    "note": "※価格はすべて税込です。\n※未就学児は保護者1名につき1名まで膝上観戦無料（座席が必要な場合は有料）。\n※チケットはお一人様1回の申込につき6枚まで。",
+    "bannerTitle": "あの熱狂を、\nもう一度スタジアムで。",
+    "bannerText": "伝説のプレーを、その目で。チケット好評発売中。"
   },
   "legends": {
     "title": "THE LEGENDS",
@@ -408,6 +410,14 @@
       }
     ],
     "copyright": "© 2027 FUKUOKA LEGENDS MATCH 実行委員会",
-    "disclaimer": "※日程・会場・料金・出場選手などの記載内容は仮のものです。\n※選手名・選手写真・商品画像などはダミー（サンプル）です。"
+    "disclaimer": "※日程・会場・料金・出場選手などの記載内容は仮のものです。\n※選手名・選手写真・商品画像などはダミー（サンプル）です。",
+    "closingText": "SEE YOU AT THE STADIUM"
+  },
+  "backgrounds": {
+    "hero": "assets/img/stadium.jpg",
+    "match": "assets/img/crowd.jpg",
+    "legends": "assets/img/pitch.jpg",
+    "banner": "assets/img/tunnel.jpg",
+    "closing": "assets/img/net.jpg"
   }
 }

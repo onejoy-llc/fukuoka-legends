@@ -38,6 +38,11 @@
       T('date', '開催日'), T('kickoff', 'キックオフ時間'), T('venue', '会場'),
       T('rosterNote', '選手未発表のときの一言', '選手が1人も登録されていない間だけ表示されます'),
     ] },
+    { key: 'backgrounds', label: '背景写真', help: '各エリアの背景に敷くスタジアムの写真です。横長（1920×1080程度）の暗めの写真が合います。外すとそのエリアは写真なしの黒背景になります。', fields: [
+      I('hero', 'メインビジュアルの背景', 'キービジュアル画像が未設定のとき（とスマホ表示）に使われます'),
+      I('match', '「試合について」の背景'), I('legends', '「出場レジェンド」の背景'),
+      I('banner', 'チケット案内の帯の背景'), I('closing', 'ページ最後の帯の背景'),
+    ] },
     { key: 'partners', label: '協賛・パートナー', help: '区分（例：PRESENTED BY:）ごとに企業を登録します。ロゴ画像がなければ社名が文字で表示されます。', root: true, fields: [
       L('partners', '区分', '区分', 'label', [
         T('label', '区分の名前', '例：SPONSORED BY:'),
@@ -64,6 +69,7 @@
       T('title', '見出し'), A('lead', 'リード文'),
       L('items', '席種', '席種', 'name', [T('rank', '記号', '例：SS、S、A'), T('name', '席種名'), T('desc', '説明'), T('price', '価格', '例：¥8,000'), T('status', '販売状況', '例：販売中／残りわずか／完売')], { rank: '', name: '', desc: '', price: '', status: '販売中' }),
       A('note', '注意書き'),
+      A('bannerTitle', '写真の帯：大きな見出し', '選手紹介の下に出る写真つきの帯。見出しと文を両方空欄にすると帯ごと非表示'), A('bannerText', '写真の帯：説明文'),
     ] },
     { key: 'legends', label: '出場レジェンド', help: '名前が空欄の選手は「COMING SOON」カードになります。名前を入れると、ページ最上部の選手名一覧にも自動で載ります。', fields: [
       T('title', '見出し'), A('lead', 'リード文'),
@@ -85,6 +91,7 @@
     ] },
     { key: 'footer', label: 'フッター', help: 'ページ最下部のリンク・著作権表示です。', fields: [
       L('links', 'リンク', 'リンク', 'label', [T('label', '文字'), T('url', 'URL', 'メールなら mailto:info@example.com のように入力')], { label: '', url: '' }),
+      T('closingText', 'ページ最後の帯の英字', '例：SEE YOU AT THE STADIUM。空欄にすると帯ごと非表示。日時と会場は「試合について」の内容が出ます'),
       T('copyright', 'コピーライト'), A('disclaimer', '注意書き', '本番公開時は空欄にしてください（「記載内容は仮のものです」の一文）'),
     ] },
   ];

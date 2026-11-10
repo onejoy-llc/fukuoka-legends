@@ -7,7 +7,7 @@ const paras = (s) => String(s ?? '').split(/\r?\n\s*\r?\n/).filter((p) => p.trim
 const link = (u) => {
   const s = String(u ?? '').trim();
   if (!s) return '';
-  if (/^(https?:\/\/|mailto:|tel:|#|\/|uploads\/)/i.test(s)) return esc(s);
+  if (/^(https?:\/\/|mailto:|tel:|#|\/|uploads\/|assets\/)/i.test(s)) return esc(s);
   return '';
 };
 const ext = (u) => (/^https?:/i.test(String(u ?? '')) ? ' target="_blank" rel="noopener"' : '');
@@ -56,6 +56,17 @@ function renderPage(c) {
   const match = c.match || {}, tk = c.tickets || {}, lg = c.legends || {}, ac = c.access || {}, ft = c.footer || {};
   const A = c.teams?.a || {}, B = c.teams?.b || {};
   const colA = color(A.color, '#b5121b'), colB = color(B.color, '#143a8c');
+  const bg = c.backgrounds || {};
+  const bgUrl = (k) => (link(bg[k]) ? `url('${link(bg[k])}')` : '');
+  // 背景画像のURLは index.html から見た相対パスにするため、CSSファイルではなくここで出力する
+  const bgCss = [
+    hero.image ? `@media (min-width:901px){.hero.has-kv{background:#0d0203}.hero.has-kv::before{background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,0) 26%,rgba(0,0,0,0) 74%,rgba(0,0,0,.55)),linear-gradient(rgba(30,3,6,.5),rgba(20,3,5,0) 26%,rgba(0,0,0,.3) 62%,rgba(0,0,0,.95) 95%),url('${link(hero.image)}') center top/cover no-repeat}}@media (max-width:900px){.has-kv .hero-kv{background-image:url('${link(hero.image)}')}}` : '',
+    bgUrl('hero') ? `.hero:not(.has-kv)::before{background:linear-gradient(rgba(60,6,11,.5),rgba(20,3,5,.3) 45%,rgba(0,0,0,.96) 97%),${bgUrl('hero')} center/cover no-repeat}.hero:not(.has-kv)::after{display:none}@media (max-width:900px){.hero.has-kv::before{background:linear-gradient(rgba(40,4,8,.72),rgba(10,2,3,.86) 55%,#000 96%),${bgUrl('hero')} center/cover no-repeat}.hero.has-kv::after{display:none}}` : '',
+    bgUrl('match') ? `.about::before{background-image:linear-gradient(rgba(11,11,11,.58),rgba(11,11,11,.7) 55%,#0b0b0b),${bgUrl('match')}}` : '',
+    bgUrl('legends') ? `.legends::before{background-image:linear-gradient(rgba(11,11,11,.35),rgba(11,11,11,.6) 55%,#0b0b0b),${bgUrl('legends')}}` : '',
+    bgUrl('banner') ? `.banner{background-image:${bgUrl('banner')}}` : '',
+    bgUrl('closing') ? `.closing{background-image:${bgUrl('closing')}}` : '',
+  ].join('');
   const ticketUrl = link(site.ticketUrl) || '#tickets';
   const players = arr(lg.players);
   const named = players.filter((p) => (p.nameEn || p.name || '').trim());
@@ -99,13 +110,13 @@ ${site.indexable === 'yes' ? '' : '<meta name="robots" content="noindex,nofollow
 <meta property="og:title" content="${esc(site.title)}">
 <meta property="og:description" content="${esc(site.description)}">
 <meta property="og:type" content="website">
-${hero.image ? `<meta property="og:image" content="${link(hero.image)}">` : ''}
+${hero.image || bg.hero ? `<meta property="og:image" content="${link(hero.image || bg.hero)}">` : ''}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%23e3000f'/%3E%3Crect x='8' y='27' width='48' height='10' fill='%23fff' transform='skewX(-9)' transform-origin='32 32'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;600;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="assets/site.css">
-<style>:root{--team-a:${colA};--team-b:${colB}}${hero.image ? `@media (min-width:901px){.hero.has-kv{background:#140305}.hero.has-kv::before{background:linear-gradient(rgba(40,4,7,.42),rgba(20,3,5,.05) 34%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.94) 96%),url('${link(hero.image)}') center top/cover no-repeat}}@media (max-width:900px){.has-kv .hero-kv{background-image:url('${link(hero.image)}')}}` : ''}</style>
+<style>:root{--team-a:${colA};--team-b:${colB}}${bgCss}</style>
 </head>
 <body>
 <a class="skip" href="#main">コンテンツにスキップ</a>
@@ -232,6 +243,16 @@ ${arr(goods.items).length ? `
   <ul class="cards">${players.map(card).join('')}</ul>
 </section>
 
+${tk.bannerTitle || tk.bannerText ? `
+<section class="photo-band banner">
+  <div class="photo-band-in">
+    <p class="eyebrow">TICKETS</p>
+    <h2>${br(tk.bannerTitle)}</h2>
+    ${tk.bannerText ? `<p>${br(tk.bannerText)}</p>` : ''}
+    <a class="btn btn-cream" href="${ticketUrl}"${ext(site.ticketUrl)}>${esc(site.ticketButton || 'チケットの購入はこちらまで')}</a>
+  </div>
+</section>` : ''}
+
 <section class="band band-black access" id="access">
   <div class="access-grid">
     <div>
@@ -249,6 +270,14 @@ ${arr(c.faq).length ? `
   <div class="wrap">
     <h2 class="h-wide h-dark">FAQS</h2>
     ${arr(c.faq).map((f) => `<details><summary>${esc(f.q)}</summary><div>${paras(f.a)}</div></details>`).join('')}
+  </div>
+</section>` : ''}
+${ft.closingText ? `
+<section class="photo-band closing">
+  <div class="photo-band-in">
+    <p class="closing-en">${esc(ft.closingText)}</p>
+    <h2>${esc(match.date)}</h2>
+    <p>${esc(match.time)}<br>${esc(match.venue)}</p>
   </div>
 </section>` : ''}
 </main>
