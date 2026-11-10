@@ -1,0 +1,413 @@
+{
+  "site": {
+    "title": "FUKUOKA LEGENDS MATCH 2027｜福岡レジェンズマッチ 公式サイト",
+    "description": "九州レジェンズ 対 ワールドレジェンズ。伝説の選手たちが博多に集う、一夜限りのレジェンドマッチ。2027年3月21日(日) ベスト電器スタジアム。",
+    "logoMain": "FUKUOKA LEGENDS",
+    "logoSub": "MATCH 2027",
+    "logoImage": "",
+    "ticketUrl": "#tickets",
+    "ticketButton": "チケットの購入はこちらまで",
+    "subButtonLabel": "",
+    "subButtonUrl": "",
+    "indexable": "no"
+  },
+  "sns": {
+    "instagram": "",
+    "x": "",
+    "facebook": ""
+  },
+  "teams": {
+    "a": {
+      "name": "九州レジェンズ",
+      "nameEn": "KYUSHU",
+      "sub": "Legends",
+      "short": "K",
+      "color": "#b5121b",
+      "logo": ""
+    },
+    "b": {
+      "name": "ワールドレジェンズ",
+      "nameEn": "WORLD",
+      "sub": "Legends",
+      "short": "W",
+      "color": "#143a8c",
+      "logo": ""
+    }
+  },
+  "hero": {
+    "image": "uploads/dummy/keyvisual.svg",
+    "catch": "九州初開催！\n伝説たちが博多に集う！\nONE NIGHT ONLY",
+    "date": "2027年3月21日(日)",
+    "kickoff": "午後2時キックオフ",
+    "venue": "福岡／ベスト電器スタジアム",
+    "rosterNote": "出場レジェンドは順次発表"
+  },
+  "partners": [
+    {
+      "label": "TICKETING PARTNER:",
+      "items": [
+        {
+          "name": "PARTNER A",
+          "logo": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "label": "PRESENTED BY:",
+      "items": [
+        {
+          "name": "PARTNER B",
+          "logo": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "label": "SUPPORTED BY:",
+      "items": [
+        {
+          "name": "PARTNER C",
+          "logo": "",
+          "url": ""
+        },
+        {
+          "name": "PARTNER D",
+          "logo": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "label": "SPONSORED BY:",
+      "items": [
+        {
+          "name": "PARTNER E",
+          "logo": "",
+          "url": ""
+        },
+        {
+          "name": "PARTNER F",
+          "logo": "",
+          "url": ""
+        },
+        {
+          "name": "PARTNER G",
+          "logo": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "festival": {
+    "title": "【同時開催】ファンフェスティバル in 東平尾公園",
+    "body": "試合当日はスタジアム周辺でファンフェスティバルを同時開催します。\n博多の屋台グルメ、レジェンドによるキッズクリニック、トークショーなど、開場前から一日中お楽しみいただけます。\nファンフェスティバルエリアは入場無料です。",
+    "items": [
+      {
+        "title": "博多屋台グルメ",
+        "text": "とんこつラーメン、もつ鍋、明太子。博多の名物がスタジアム前に集合。",
+        "image": "uploads/dummy/fes-yatai.svg"
+      },
+      {
+        "title": "キッズクリニック",
+        "text": "レジェンドが直接指導。小学生対象・事前抽選制（定員200名）。",
+        "image": "uploads/dummy/fes-kids.svg"
+      },
+      {
+        "title": "トークショー",
+        "text": "あの名勝負の裏側を本人が語る。メインステージにて13:00開演。",
+        "image": "uploads/dummy/fes-talk.svg"
+      },
+      {
+        "title": "公式グッズ販売",
+        "text": "記念ユニフォームや限定アイテムを会場で販売。",
+        "image": "uploads/dummy/fes-goods.svg"
+      }
+    ],
+    "buttonLabel": "",
+    "buttonUrl": ""
+  },
+  "goods": {
+    "title": "大会公式グッズ",
+    "items": [
+      {
+        "name": "FUKUOKA LEGENDS MATCH 公式パーカー",
+        "price": "¥8,000 (tax in)",
+        "image": "uploads/dummy/goods-hoodie.svg"
+      },
+      {
+        "name": "FUKUOKA LEGENDS MATCH 公式半袖Tシャツ",
+        "price": "¥4,000 (tax in)",
+        "image": "uploads/dummy/goods-tshirt.svg"
+      },
+      {
+        "name": "タオルマフラー",
+        "price": "¥3,000 (tax in)",
+        "image": "uploads/dummy/goods-muffler.svg"
+      },
+      {
+        "name": "ネックストラップ",
+        "price": "¥2,000 (tax in)",
+        "image": "uploads/dummy/goods-strap.svg"
+      },
+      {
+        "name": "缶バッジ3個セット",
+        "price": "¥1,000 (tax in)",
+        "image": "uploads/dummy/goods-badges.svg"
+      },
+      {
+        "name": "ステッカー2枚セット",
+        "price": "¥1,000 (tax in)",
+        "image": "uploads/dummy/goods-stickers.svg"
+      }
+    ],
+    "buttonLabel": "",
+    "buttonUrl": ""
+  },
+  "match": {
+    "date": "2027年3月21日(日)",
+    "time": "14:00 キックオフ (12:00 開場)",
+    "venue": "ベスト電器スタジアム(福岡)",
+    "sections": [
+      {
+        "heading": "”伝説の一戦”が九州で初開催！",
+        "body": "あの日、テレビの前で叫んだ。あのゴールを、あの背中を、もう一度この目で。九州のピッチに、伝説たちが帰ってきます。\n\n九州ゆかりのレジェンドで結成する「九州レジェンズ」と、世界の舞台で戦ってきた名手が集う「ワールドレジェンズ」。日本サッカーの黄金期を築いた選手たちが、一夜限りで同じピッチに立ちます。"
+      },
+      {
+        "heading": "”博多の街ごと、スタジアムに”",
+        "body": "試合当日はスタジアム周辺でファンフェスティバルを同時開催。試合前から一日中、スタジアムがお祭りになります。\n\nサッカーファンなら誰もが見逃せないこの貴重な機会、新たな歴史を一緒に作りましょう！"
+      }
+    ],
+    "timetableTitle": "当日のスケジュール",
+    "timetable": [
+      {
+        "time": "12:00",
+        "title": "開場・ファンフェス開始",
+        "note": "スタジアム周辺エリアで屋台・物販がオープン"
+      },
+      {
+        "time": "13:00",
+        "title": "レジェンドトークショー",
+        "note": "メインステージで両チームの監督が登壇"
+      },
+      {
+        "time": "14:00",
+        "title": "キックオフ",
+        "note": "40分ハーフ・交代自由の特別ルール"
+      },
+      {
+        "time": "15:45",
+        "title": "セレモニー",
+        "note": "試合後に場内一周・記念撮影"
+      }
+    ]
+  },
+  "tickets": {
+    "title": "チケット金額",
+    "lead": "一般販売 受付中。全席指定（自由席を除く）。",
+    "items": [
+      {
+        "rank": "SS",
+        "name": "プレミアムシート",
+        "desc": "メインスタンド中央・記念グッズ付き",
+        "price": "¥25,000",
+        "status": "残りわずか"
+      },
+      {
+        "rank": "S",
+        "name": "メインスタンド指定席",
+        "desc": "メインスタンド・屋根付きエリア",
+        "price": "¥15,000",
+        "status": "販売中"
+      },
+      {
+        "rank": "A",
+        "name": "バックスタンド指定席",
+        "desc": "ピッチ全体を見渡せるバックスタンド",
+        "price": "¥8,000",
+        "status": "販売中"
+      },
+      {
+        "rank": "B",
+        "name": "ゴール裏自由席",
+        "desc": "応援エリア。チームを選んで声援を",
+        "price": "¥4,000",
+        "status": "販売中"
+      },
+      {
+        "rank": "Jr",
+        "name": "小中学生チケット",
+        "desc": "A席・B席エリア対象。入場時に年齢確認あり",
+        "price": "¥1,500",
+        "status": "販売中"
+      }
+    ],
+    "note": "※価格はすべて税込です。\n※未就学児は保護者1名につき1名まで膝上観戦無料（座席が必要な場合は有料）。\n※チケットはお一人様1回の申込につき6枚まで。"
+  },
+  "legends": {
+    "title": "THE LEGENDS",
+    "lead": "出場選手は順次発表します。最新情報は公式SNSをご確認ください。",
+    "players": [
+      {
+        "name": "博多 太郎",
+        "nameEn": "TARO HAKATA",
+        "number": "1",
+        "position": "GK",
+        "team": "a",
+        "years": "1995-2012",
+        "photo": "uploads/dummy/player-01.svg",
+        "featured": "yes"
+      },
+      {
+        "name": "天神 次郎",
+        "nameEn": "JIRO TENJIN",
+        "number": "5",
+        "position": "DF",
+        "team": "a",
+        "years": "1998-2014",
+        "photo": "uploads/dummy/player-02.svg",
+        "featured": "no"
+      },
+      {
+        "name": "中洲 三郎",
+        "nameEn": "SABURO NAKASU",
+        "number": "8",
+        "position": "MF",
+        "team": "a",
+        "years": "1996-2010",
+        "photo": "uploads/dummy/player-03.svg",
+        "featured": "yes"
+      },
+      {
+        "name": "大濠 四郎",
+        "nameEn": "SHIRO OHORI",
+        "number": "9",
+        "position": "FW",
+        "team": "a",
+        "years": "2000-2016",
+        "photo": "uploads/dummy/player-04.svg",
+        "featured": "no"
+      },
+      {
+        "name": "百道 五郎",
+        "nameEn": "GORO MOMOCHI",
+        "number": "14",
+        "position": "MF",
+        "team": "a",
+        "years": "2002-2018",
+        "photo": "uploads/dummy/player-05.svg",
+        "featured": "no"
+      },
+      {
+        "name": "ジョン・サンプル",
+        "nameEn": "JOHN SAMPLE",
+        "number": "4",
+        "position": "DF",
+        "team": "b",
+        "years": "1997-2011",
+        "photo": "uploads/dummy/player-06.svg",
+        "featured": "no"
+      },
+      {
+        "name": "カルロス・デモ",
+        "nameEn": "CARLOS DEMO",
+        "number": "7",
+        "position": "MF",
+        "team": "b",
+        "years": "1999-2015",
+        "photo": "uploads/dummy/player-07.svg",
+        "featured": "yes"
+      },
+      {
+        "name": "ルイス・エグザンプル",
+        "nameEn": "LUIS EXAMPLE",
+        "number": "10",
+        "position": "MF",
+        "team": "b",
+        "years": "1994-2009",
+        "photo": "uploads/dummy/player-08.svg",
+        "featured": "yes"
+      },
+      {
+        "name": "マルコ・テスタ",
+        "nameEn": "MARCO TESTA",
+        "number": "11",
+        "position": "FW",
+        "team": "b",
+        "years": "2001-2017",
+        "photo": "uploads/dummy/player-09.svg",
+        "featured": "no"
+      },
+      {
+        "name": "ポール・ダミー",
+        "nameEn": "PAUL DUMMY",
+        "number": "21",
+        "position": "FW",
+        "team": "b",
+        "years": "2003-2019",
+        "photo": "uploads/dummy/player-10.svg",
+        "featured": "no"
+      }
+    ]
+  },
+  "access": {
+    "title": "会場・アクセス",
+    "venue": "ベスト電器スタジアム",
+    "address": "福岡市博多区東平尾公園2-1-1",
+    "mapQuery": "ベスト電器スタジアム",
+    "routes": [
+      {
+        "label": "電車・バス",
+        "text": "地下鉄空港線「福岡空港駅」から西鉄バスで約10分、「東平尾公園入口」下車 徒歩約7分"
+      },
+      {
+        "label": "シャトルバス",
+        "text": "試合当日は博多駅筑紫口から臨時シャトルバスを運行予定（10:30〜）"
+      },
+      {
+        "label": "駐車場",
+        "text": "一般駐車場の用意はありません。公共交通機関をご利用ください。"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "雨天の場合は開催されますか？",
+      "a": "雨天決行です。荒天などで中止となる場合は、前日18:00までに公式サイトとSNSでお知らせします。中止時はチケット代金を払い戻します。"
+    },
+    {
+      "q": "出場選手はいつ発表されますか？",
+      "a": "出場選手は順次発表します。最新情報は公式Instagram・Xでお知らせします。選手の出場は怪我などにより変更となる場合があります。"
+    },
+    {
+      "q": "再入場はできますか？",
+      "a": "試合開始前に限り再入場できます。ゲートで再入場スタンプを受けてください。キックオフ以降の再入場はできません。"
+    },
+    {
+      "q": "ファンフェスティバルだけの参加はできますか？",
+      "a": "ファンフェスティバルエリアは入場無料です。キッズクリニックのみ事前抽選制で、試合チケットをお持ちの方が対象です。"
+    },
+    {
+      "q": "車いす席はありますか？",
+      "a": "メインスタンドに車いす席をご用意しています。購入方法はチケット販売ページの「車いす席」をご確認ください。"
+    }
+  ],
+  "footer": {
+    "links": [
+      {
+        "label": "お問い合わせ",
+        "url": ""
+      },
+      {
+        "label": "法的通知",
+        "url": ""
+      },
+      {
+        "label": "プライバシーポリシー",
+        "url": ""
+      }
+    ],
+    "copyright": "© 2027 FUKUOKA LEGENDS MATCH 実行委員会",
+    "disclaimer": "※日程・会場・料金・出場選手などの記載内容は仮のものです。\n※選手名・選手写真・商品画像などはダミー（サンプル）です。"
+  }
+}

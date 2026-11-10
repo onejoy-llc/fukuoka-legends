@@ -1,0 +1,6 @@
+.DS_Store
+_old/
+data/content.backup.json
+data/content.before-dummy.json
+uploads/*-test.png
+node_modules/
