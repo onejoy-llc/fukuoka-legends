@@ -257,7 +257,7 @@
         "position": "GK",
         "team": "a",
         "years": "1995-2012",
-        "photo": "uploads/dummy/player-01.svg",
+        "photo": "uploads/dummy/player-01.jpg",
         "featured": "yes"
       },
       {
@@ -267,7 +267,7 @@
         "position": "DF",
         "team": "a",
         "years": "1998-2014",
-        "photo": "uploads/dummy/player-02.svg",
+        "photo": "uploads/dummy/player-02.jpg",
         "featured": "no"
       },
       {
@@ -277,7 +277,7 @@
         "position": "MF",
         "team": "a",
         "years": "1996-2010",
-        "photo": "uploads/dummy/player-03.svg",
+        "photo": "uploads/dummy/player-03.jpg",
         "featured": "yes"
       },
       {
@@ -287,7 +287,7 @@
         "position": "FW",
         "team": "a",
         "years": "2000-2016",
-        "photo": "uploads/dummy/player-04.svg",
+        "photo": "uploads/dummy/player-04.jpg",
         "featured": "no"
       },
       {
@@ -297,7 +297,7 @@
         "position": "MF",
         "team": "a",
         "years": "2002-2018",
-        "photo": "uploads/dummy/player-05.svg",
+        "photo": "uploads/dummy/player-05.jpg",
         "featured": "no"
       },
       {
@@ -307,7 +307,7 @@
         "position": "DF",
         "team": "b",
         "years": "1997-2011",
-        "photo": "uploads/dummy/player-06.svg",
+        "photo": "uploads/dummy/player-06.jpg",
         "featured": "no"
       },
       {
@@ -317,7 +317,7 @@
         "position": "MF",
         "team": "b",
         "years": "1999-2015",
-        "photo": "uploads/dummy/player-07.svg",
+        "photo": "uploads/dummy/player-07.jpg",
         "featured": "yes"
       },
       {
@@ -327,7 +327,7 @@
         "position": "MF",
         "team": "b",
         "years": "1994-2009",
-        "photo": "uploads/dummy/player-08.svg",
+        "photo": "uploads/dummy/player-08.jpg",
         "featured": "yes"
       },
       {
@@ -337,7 +337,7 @@
         "position": "FW",
         "team": "b",
         "years": "2001-2017",
-        "photo": "uploads/dummy/player-09.svg",
+        "photo": "uploads/dummy/player-09.jpg",
         "featured": "no"
       },
       {
@@ -347,7 +347,7 @@
         "position": "FW",
         "team": "b",
         "years": "2003-2019",
-        "photo": "uploads/dummy/player-10.svg",
+        "photo": "uploads/dummy/player-10.jpg",
         "featured": "no"
       }
     ]
